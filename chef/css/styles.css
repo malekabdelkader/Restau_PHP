@@ -1,0 +1,591 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url("../images/bg.jpg");
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+div.title-box {
+    background-color: white;
+    position: absolute;
+    z-index: 999;
+    padding: 50px;
+    top: 60px;
+    box-shadow: -13px 13px 2px 1px rgba(0, 0, 0, .2);
+}
+.title-box:hover{
+    transform: scale(0.97) ;
+    transition: 0.7s all;
+
+}
+header h1{
+    font-size: 80px;
+    text-align: center;
+}
+
+header p {
+    font-size: 25px;
+    text-align: center;
+}
+header a{
+    font-size: 25px;
+   margin-left: 20px;
+    
+}
+header a:hover{
+    color: rgb(0, 0, 0);
+    transform: scale(0.8) ;
+    transition: 0.7s all;
+}
+header h1, header p, li {
+    font-family: 'Kenia', cursive;
+}
+
+/* slider */
+
+.slider {
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: calc(320px * 4);
+    height: 420px;
+    animation: glisse 7s infinite ease;
+}
+
+.slide {
+    opacity: 1;
+}
+
+@keyframes glisse{
+
+    0% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-500px);
+    }
+
+    40% {
+        transform: translateX(-1000px);
+    }
+
+    60% {
+        transform: translateX(-1500px);
+    }
+    80% {
+        transform: translateX(-800px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
+}
+
+/* navigation menu */
+
+.section-menu {
+    transform: translateY(-30px);
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu {
+    width: 100%;
+}
+
+nav.menu ul {
+    display: flex;
+    flex-direction: row;
+}
+
+nav.menu ul li {
+    height: 260px;
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s all;
+}
+
+nav.menu ul li:hover {
+    transform: scale(0.90);
+    transition: 0.3s all;
+}
+
+nav.menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+}
+
+.nav-item {
+    flex: 1;
+    height: 300px;
+}
+
+.pizza {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background: url(../images/pizza-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.salade {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background: url(../images/salad-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.burger {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background: url(../images/burger-banner.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Boissonfraiche {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background: url(../images/jus1.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.jus {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background: url(../images/juss.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Cafe {
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background: url(../images/noscafe.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* sections plats */
+
+.item {
+    background-color: white;
+    margin: 20px;
+    display: flex;
+    cursor: pointer;
+    transition: 0.3s all;
+    width: 50%;
+}
+
+.item:hover {
+    transform: scale(1.1);
+    transition: 0.3s all;
+}
+
+.item:hover {
+    transition: 0.3s all;
+    box-shadow: -8px 8px 2px 1px rgba(0, 0, 0, .1);
+}
+
+.item-infos {
+    padding: 20px;
+    line-height: 40px;
+}
+
+section {
+    padding: 100px;
+    font-family: 'Martel', serif;
+}
+
+.item-infos h3 {
+    font-size: 25px;
+}
+.item-infos hr {
+    margin: 10px 0 10px 0;
+    opacity: 0.5;
+}
+
+p.prix {
+    font-weight: bold;
+    font-size: 22px;
+}
+
+section img {
+    width: 300px;
+    height: 300px;
+}
+
+/* menu bloqué à droite */
+
+.sticky {
+    position: fixed;
+    width: 500px;
+    top: 30vh;
+    right: 50px;
+    transform: translateY(-250px);
+    transition: 0.6s all;
+}
+
+.sticky + #main {
+    padding-top: 200px;
+}
+
+.sticky nav.menu ul {
+    flex-direction: column;
+}
+
+.sticky, nav.menu ul li {
+    margin: 2px;
+}
+
+/* pied de page */
+
+footer p {
+    font-size: 22px;
+    text-align: center;
+    color: white;
+    padding: 20px;
+    font-family: 'Martel', serif;
+}
+
+/* page commande 
+.souid {
+    background: url(../images/jus1.jpg);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    width: 1200px;
+    height: 500px;
+    
+    margin: auto;
+    color: aliceblue;
+}
+
+label{
+   font-size: 22px;
+   display: block;
+   width: 150px;
+   float: left; 
+
+}*/
+/* code form commande */
+button[type=submit]{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-image: linear-gradient(to right, #4CAF50, rgb(71, 219, 52), #4CAF50,rgb(1, 158, 1), #4CAF50,rgb(71, 219, 52), #4CAF50);
+    margin-top: auto;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+    
+}
+input[type=text], select {
+    background: white;
+    opacity: 0.5;  
+      width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=tel] {
+    background: white;
+    opacity: 0.5;      width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  
+  
+ 
+  
+  .formdiv {
+   margin-top: 30px;
+    margin-left:40px ;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    border-radius:  5px;
+    /*background-color: #f2f2f2;*/
+    background: url(../images/burger-banner.jpg);
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    
+    height: 550px;
+  }
+  .apropos{
+    margin-top: 30px;
+    margin-left:40px ;
+    margin-right: 40px;
+    margin-bottom: 30px;
+    border-radius:  5px;
+    /*background-color: #f2f2f2;*/
+    background: url(../images/ok2.jpg ) 100%;
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    
+    height: 550px;
+  }
+  .myform{
+      margin-top: 3px;
+      margin-left:20px ;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      padding: 20px;
+      opacity: 1;
+
+
+  }
+  .divform{
+    width: 500px;
+    height: 550px;
+    margin-left: 30px;
+    border-radius:  10px;
+    background: rgba(255, 255, 255, 0.3);
+    float: left;
+  }
+  .myform button:hover{
+    transform: scale(0.95) ;
+    transition: 0.3s all;
+  }
+  .divcommande{
+    margin-right: 30px;
+    width: 500px;
+    height: 550px;
+    float: right;
+    border-radius:  10px;
+    background: rgba(255, 255, 255, 0.3);
+      
+  }
+
+.chefimage{
+    margin-left: 180px;
+    width:150px ;
+    height:150px;
+}
+.chefimage:hover{
+    transform: scale(1.3) rotate(360deg) ;
+    transition: 0.5s;
+    
+}
+.divcommande h1{
+    font-size: 22px;
+    text-align: center;
+    color: rgb(139, 16, 16);
+    padding: 20px;
+    font-family: 'Martel', serif;
+    
+}
+.petit{
+    width: 40px;
+    height: 40px;
+}
+.message{
+    align-content: center;
+    text-size-adjust: 25px;
+    font-size: 25x;
+    color: rgb(139, 16, 16);
+    padding: 20px;
+    font-family: 'Martel', serif;
+}
+.com1{
+   
+
+    margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 50px;
+    background: url(../images/chef-img.jpg) 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 380px;
+    top: 30vh;
+    right: 50px;
+    transform: translateY(50px);
+    
+}
+
+.com1 ul{
+    
+    margin-left:20px ;
+    
+} 
+.com1 table,.com1 td {
+    
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    margin: auto;
+    border: 2px solid #333;
+    width: 1200px;
+    height: 150px;
+    
+}
+
+.com1 thead,.com1 tfoot {
+    background-color: rgba(167, 47, 47, 0.322);
+    color: #fff;
+}
+
+.button1, .button2{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background-image: linear-gradient(to right, white, rgb(49, 86, 189),rgb(57, 238, 214), rgb(49, 86, 189),white);
+    margin-top: auto;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    border-radius: 4px;
+
+}
+
+
+/* div commande */
+.divcommande table{
+   /* border: 1px solid black;*/
+position: initial;   
+ align-self: start;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.divcommande table td{
+    width: 125px;
+}
+.table_td{
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    text-align: end;
+    font-family:'Kenia', cursive;
+    color: white;
+    font-size: 30px;
+}
+.divcommande p{
+    margin-left: 25%;
+color: rgb(139, 16, 16);
+    font-size: 15px;
+}/* div commande */
+.offre_img{
+    margin-top: 20px;
+   margin-left: 3%; 
+   width: 94%;
+}
+.socialmedia{
+    margin-left: 20px;
+    float: left;
+}
+.socialmedia img{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+.socialmedia img:hover{
+    transform: scale(0.85) rotate(-10deg) ;
+    transition: 0.3s all;
+}
+.socialmedia li{
+list-style-type: none;
+}
+.avis{
+    border-color: black;
+    border-style: solid;
+    margin-right: 30px;
+    width: 500px;
+    height: 550px;
+    float: right;
+    border-radius:  10px;
+    background: rgba(255, 255, 255, 0.3);
+}
+.avis img{
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+.avis img:hover{
+    transform: scale(1.01) ;
+    
+    transition: 0.3s all;
+}
+.mediatitle{
+    margin-top: 25%;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    text-align: center;
+    font-family:'Kenia', cursive;
+    color: white;
+    font-size: 35px;
+  }
+  .phone {
+      margin-top: 40px;
+    text-shadow: 2px 0 0 black, -2px 0 0 black, 0 2px 0 black, 0 -2px 0 black, 1px 1px black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black;
+    text-align: center;
+    font-family: cursive;
+    color: white;
+    font-size: 30px;
+  }
+input[type=email]{
+
+    background: white;
+    opacity: 0.5;  
+      width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+textarea{
+
+    background: white;
+    
+    opacity: 0.5;  
+      width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.phone:hover{
+    transform: scale(1.5);
+    transition: 0.3s all;
+}

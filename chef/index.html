@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon"  href="images/chef.png" type="image/png" sizes="16x16">
+        <title>HAMMOUDA - Restaurant</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kenia&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Martel:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <form id="Form" action='element.php' method="POST">
+        <!--<form id="Form" onsubmit="validateForm();return false">-->
+        <!-- balise pour le haut de page -->
+        <header>
+
+            <div class="title-box" >
+                <!-- titre pour ma page -->
+                <h1>HAMMOUDA</h1>
+                <!-- slogan pour ma page -->
+                <p>Des petits plats tout en douceur</p>
+                <a href="chef.php"> Consulter Commandes</a>
+                <a href="messages.php"> Consulter Messages</a>
+            </div>
+            
+
+            <!-- slider d'images -->
+            <div class="slider">
+                <div class="slides">
+                    <div class="slide"><img src="images/1.jpg"></div>
+                    <div class="slide"><img src="images/2.jpg"></div>
+                    <div class="slide"><img src="images/3.jpg"></div>
+                    <div class="slide"><img src="images/4.jpg"></div>
+                </div>
+            </div>
+
+        </header>
+
+        
+
+        <div id="sticky-header" class="section-menu">
+            <!-- menu de navigation -->
+            <nav class="menu">
+                <ul>
+                    <span id="ok"></span>
+                    <li class="nav-item pizza"><a href="#pizza">Pizza</a></li>
+                    <li class="nav-item salade"><a href="#salade">Salade</a></li>
+                    <li class="nav-item burger"><a href="#burger">Burger</a></li>
+                    <li class="nav-item jus"><a href="#jus">Jus</a></li>
+                    <li class="nav-item Cafe"><a href="#Cafe"> Café</a></li>
+                    <li class="nav-item Boissonfraiche"><a href="#Boissonfraiche">Boissons fraiches </a></li>                    
+            </nav>
+        </div>
+
+        <main id="main" >
+            
+
+            <!-- section pizza -->
+            <section id="pizza" class="pizza">
+                
+
+                <div class="item" >
+                    <img src="images/pizza1.jpg">
+                    <div class="item-infos">
+                        <h3>Caprapiquante</h3>
+                        <hr>
+                        <p>Chevre, Miel, Graines toastés, piment rouge</p>
+                        <p class="prix" > 22 Dt </p>
+                        <label>Quantité :</label><input type="number" name="p1" id="Qpizza1" placeholder="0" min="0" max="10" >
+                        
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/pizza2.jpg" >
+                    <div class="item-infos">
+                        <h3>Strategia</h3>
+                        <hr>
+                        <p>Tomates, Mozerlla, Basilique</p>
+                        <p class="prix"> 17 Dt </p>
+                        <label>Quantité :</label><input type="number" name="p2" id="Qpizza2" placeholder="0" min="0" max="10">
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/pizza3.jpg">
+                    <div class="item-infos">
+                        <h3>Naturale</h3>
+                        <hr>
+                        <p>Chèvre, courgettes, basilique, carottes, huile vegetale</p>
+                        <p class="prix"> 20 Dt </p>
+                        <label>Quantité :</label><input type="number" name="p3" id="Qpizza3" placeholder="0" min="0" max="10">
+                    </div>
+                </div>
+                
+                
+                 
+            </section>
+            <!-- section salade -->
+            <section id="salade" class="salade">
+            
+                <div class="item">
+                    <img src="images/salade1.jpg">
+                    <div class="item-infos">
+                        <h3>Salade Poulet betterave</h3>
+                        <hr>
+                        <p>Poulet,mache,betterave, avocat, croutons</p>
+                        <p class="prix"> 16 Dt </p>
+                        <label>Quantité :</label><input type="number" name="s1" id="Qsalade1" placeholder="0" min="0" max="10" >
+
+
+                    </div>
+                </div>
+                
+                <div class="item">
+                    <img src="images/salade2.jpg">
+                    <div class="item-infos">
+                        <h3>Salade grec maison</h3>
+                        <hr>
+                        <p>Salade, tomates, olives, feta, oignons basilique</p>
+                        <p class="prix"> 14 Dt</p>
+                        <label>Quantité :</label><input type="number" name="s2" id="Qsalade2" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/salade3.jpg">
+                    <div class="item-infos">
+                        <h3>Salade tomates mozarella</h3>
+                        <hr>
+                        <p>Tomates, mozarella , salade,maches,epinard</p>
+                        <p class="prix"> 15 Dt </p>
+                        <label>Quantité :</label><input type="number" name="s3" id="Qsalade3" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+            </section>
+            
+            <!-- section burger -->
+            <section id="burger" class="burger">
+
+                <div class="item">
+                    <img src="images/burger1.jpg">
+                    <div class="item-infos">
+                        <h3>Légendaire</h3>
+                        <hr>
+                        <p>1 steak + beuf + chedar</p>
+                        <p class="prix"> 19 Dt </p>
+                        <label>Quantité :</label><input type="number" name="b1" id="Qburger1" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/burger2.jpg">
+                    <div class="item-infos">
+                        <h3>Villageois</h3>
+                        <hr>
+                        <p>1 steak + chedar + salade + oignons</p>
+                        <p class="prix"> 21 Dt </p>
+                        <label>Quantité :</label><input type="number" name="b2" id="Qburger2" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/burger3.jpg">
+                    <div class="item-infos">
+                        <h3>Basique</h3>
+                        <hr>
+                        <p>2 steaks + chedar</p>
+                        <p class="prix"> 23 Dt </p>
+                        <label>Quantité :</label><input type="number" name="b3" id="Qburger3" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section jus -->
+            <section id="jus" class="jus">
+
+                <div class="item">
+                    <img src="images/boisson1.jpg">
+                    <div class="item-infos">
+                        <h3>Jus multifruits</h3>
+                        <hr>
+                        <p>Banane, orange, fraise</p>
+                        <p class="prix"> 7.5 Dt </p>
+                        <label>Quantité :</label><input type="number" name="j1" id="Qjus1" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/boisson2.jpg">
+                    <div class="item-infos">
+                        <h3>jus de pastèque</h3>
+                        <hr>
+                        <p>La pastèque du jardin</p>
+                        <p class="prix">  8 Dt    </p>
+                        <label>Quantité :</label><input type="number" name="j2" id="Qjus2" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/citron.jpg">
+                    <div class="item-infos">
+                        <h3>Citronnade</h3>
+                        <hr>
+                        <p>citron + Glaçon</p>
+                        <p class="prix">  6 Dt </p>
+                        <label>Quantité :</label><input type="number" name="j3" id="Qjus3" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section cafe -->
+            <section id="Cafe" class="Cafe">
+
+                <div class="item">
+                    <img src="images/direct.jpg">
+                    <div class="item-infos">
+                        <h3>Direct</h3>
+                        <hr>
+                        <p>Lait chaud à l’expresso</p>
+                        <p class="prix"> 4.5 Dt</p>
+                        <label>Quantité :</label><input type="number" name="c1" id="Qcafe1" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/cappucino.jpg">
+                    <div class="item-infos">
+                        <h3>Capuccino</h3>
+                        <hr>
+                        <p> Café ,créme      </p>
+                        <p class="prix">6 Dt  </p>
+                        <label>Quantité :</label><input type="number" name="c2" id="Qcafe2" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/express.jpg">
+                    <div class="item-infos">
+                        <h3>Express</h3>
+                        <hr>
+                        <p>café</p>
+                        <p class="prix">3.5 DT</p>
+                        <label>Quantité :</label><input type="number" name="c3" id="Qcafe3" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- section boisson fraiche -->
+            <section id="Boissonfraiche" class="Boissonfraiche">
+
+                <div class="item" >
+                    <img src="images/milkshake.jpg">
+                    <div class="item-infos">
+                        <h3>Milkshake</h3>
+                        <hr>
+                        <p>Banane, Chocolat, fraise ,oreo...</p>
+                        <p class="prix">  12 Dt </p>
+                        <label>Quantité :</label><input type="number" name="m1" id="Qboisson1" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/mojito.jpg">
+                    <div class="item-infos">
+                        <h3>Mojito</h3>
+                        <hr>
+                        <p>Citron, Menthe, sirop</p>
+                        <p class="prix">  11 Dt </p>
+                        <label>Quantité :</label><input type="number" name="m2" id="Qboisson2" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+                <div class="item">
+                    <img src="images/smoothies.jpg">
+                    <div class="item-infos">
+                        <h3>Smoothies</h3>
+                        <hr>
+                        <p>Banane, Chocolat, fraise ,nutella...</p>
+                        <p class="prix"> 12 Dt </p>
+                        <label>Quantité :</label><input type="number" name="m3" id="Qboisson3" placeholder="0" min="0" max="10" >
+                    </div>
+                </div>
+
+            </section>
+
+
+
+
+        </main>
+
+        <!-- pied de page -->
+        <footer id="footer">
+
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12770.17716314101!2d10.25049082495238!3d36.85338864893421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12e2caa8ffcdd42b%3A0x370637670504b1a5!2sEl%20Aouina%2C%20Tunis!5e0!3m2!1sfr!2stn!4v1591046946745!5m2!1sfr!2stn" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            <p style="color: black;"> &copy; 2020 - Tic-B | Tout droits réservés</p>
+        </footer>
+
+        <!-- charge le script javascript -->
+        <script src="js/Main.js"></script>
+    </form>
+    </body>
+</html>
